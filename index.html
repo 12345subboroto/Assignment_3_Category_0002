@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3 category 0002</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/8298b650b3.js" crossorigin="anonymous"></script>
     <!-- daisyUL  -->
@@ -25,14 +29,21 @@
         }
       }
     </script>
+    <style>
+      .sora-fonts{
+       font-family: "Sora", serif;
+        font-optical-sizing: auto;
+
+        }
+      </style>
 </head>
-<body>
+<body class="sora-fonts">
     <!-- header style -->
      <header>
         <!-- nav style -->
-        <div class="navbar bg-base-100 flex justify-between md:container mx-auto px-6">
+        <div class="navbar bg-base-100 flex justify-between md:container mx-auto px-12">
             <div class="lg:hidden">
-                <img src="c2-assets/logo-header.png" alt="">
+                <img src="c2-assets/Group.png" alt="">
             </div>
             <div class="">
               <div class="dropdown">
@@ -323,23 +334,23 @@
             <h1 class="text-accent text-4xl font-semibold mb-12">Arrival & Offers</h1>
             <div class="flex flex-col lg:flex-row lg:justify-between gap-6">
              <!-- left -->
-             <div class="hero bg-[#115414]  h-96 rounded-xl">
-              <div class="hero-content flex-col lg:flex-row-reverse">
+             <div class=" bg-[#115414] rounded-xl lg:w-7/12 mx-auto">
+              <div class="hero-content flex-row-reverse lg:flex-row-reverse justify-between items-center">
                 <img
                   src="c2-assets/dawat-mock-up.png"
-                  class="max-w-sm " />
-                <div class="space-y-4">
+                  class="max-w-sm"/>
+                <div class="space-y-4 ">
                   <img src="c2-assets/dawat-logo.png" alt="">
                   <button class="btn bg-[#63B76D] border-none text-[#FFFFFF] text-2xl font-normal">Cook Exotic Dishes</button>
                   <h1 class="text-[#FFFFFF] text-4xl font-normal">UP to <span class="text-[#FFFFFF] text-4xl font-bold">20% OFF</span></h1>
-                 
-                 
                 </div>
               </div>
             </div>
+
+           
               <!-- right -->
-              <div class="hero bg-[#102861] h-96 rounded-xl w-9/12">
-                <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="bg-[#102861] rounded-xl">
+                <div class="hero-content flex-row-reverse lg:flex-row-reverse">
                   <img
                     src="c2-assets/india-gate-mock-up.png"
                     class="max-w-sm " />
@@ -353,10 +364,55 @@
           </div>
         </div>
          </section>
+         <!-- news section -->
+         <section class=" md:container mx-auto p-6  ">
+          <div class=" hero bg-second-bg py-6 rounded-xl ">
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-8">
+              <img
+                src="c2-assets/vegetable-busket.png"
+                class="max-w-sm " />
+              <div class="text-center lg:text-start">
+                <h1 class="text-4xl font-semibold">Get Grocery News!</h1>
+                <p class="py-6 text-xl text-[#111111]">
+                  Exclusive training tips, ticks, product deals and more
+                </p>
+                <div class="pb-6">
+                  <input type="text" placeholder="Enter your email " class="input  w-full max-w-xs outline-none border-none "/>
+                </div>
+
+                <button class="btn bg-accent text-[#FFFFFF] text-xl">Subscribe</button>
+              </div>
+            </div>
+          </div>
+         </section>
       </main>
       <!-- footer style -->
        <footer>
-
+        <footer class="relative lg:flex justify-between items-center bg-accent text-base-content p-10 bottom-48 -z-40">
+          <div class=" mt-48">
+            <img src="c2-assets/logo-footer.png" alt="">
+            <p class="text-second-bg text-xl">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
+          </div>
+          <div class="lg:mt-48 mt-4">
+            <nav class="flex flex-col text-second-bg text-xl">
+              <h6 class="">Products</h6>
+              <a class="">Services</a>
+              <a class="">Contact us</a>
+            </nav>
+          </div>
+           <div class="lg:mt-48 mt-4">
+            <h6 class="text-second-bg text-xl">Follow Us</h6>
+            <div class="space-x-2 text-second-bg text-xl">
+             
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-youtube"></i>
+              
+            </div>
+          </nav>
+           </div>
+        </footer>
        </footer>
 </body>
 </html>
