@@ -35,6 +35,31 @@
         font-optical-sizing: auto;
 
         }
+        /* animation */
+        .marquee {
+      overflow: hidden;
+      position: relative; 
+      height: 100px;
+     white-space: nowrap; 
+  }
+  
+  .marquee p {
+      font-size: 0.875rem;
+      font-weight: 700;
+      width: auto;
+      height: 25%;
+      line-height: 50px;
+      transform: translateX(100%);
+      animation: scroll-left 20s linear infinite;
+  }
+  @keyframes scroll-left {
+      0% {
+          transform: translateX(100%);
+      }
+      100% {
+          transform: translateX(-100%);
+      }
+  }
       </style>
 </head>
 <body class="sora-fonts">
@@ -83,14 +108,20 @@
             </div>
           </div>
       <hr class="lg:hidden">
+     <!-- animation -->
+     <div class="marquee md:container mx-auto px-6">
+      <p class="text-accent">vegetable usually refers to the fresh edible portions of certain herbaceous plants—roots, stems, leaves, flowers, fruit, or seeds. These plant parts are ....</p>
+  </div>
       <!-- hero style -->
-      <div class="text-center  space-y-6 mt-24 px-1">
-        <h1 class="text-[#111111] text-6xl font-semibold">Freshness <span class="text-accent text-6xl font-semibold">You Can <br> Count </span>On, Prices You’ll Love!</h1>
-        <p class="text-[#111111] text-xl font-normal lg:px-72">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+      <div class="text-center  space-y-6 mt-8 px-1">
+        <h1 class="text-[#111111] text-6xl font-semibold animate-pulse">Freshness <span class="text-accent text-6xl font-semibold">You Can<br>Count </span>On, Prices You’ll Love!</h1>
+        <p class="text-[#111111] text-xl font-normal lg:px-72 ">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
       </div>
       <div class="bg-gradient-to-t from-purple-200 to-slate-50 mb-32">
         <img src="c2-assets/hero-vegetables.png" alt="" class="h-lvh mx-auto">
       </div>
+       
+      
      </header>
      <!-- main style -->
       <main>
@@ -188,7 +219,7 @@
                 </div>
               </div>
               <!-- card 3-->
-              <div class="card card-compact bg-base-100 lgw-96 shadow-xl">
+              <div class="card card-compact bg-base-100 lg:w-96 shadow-xl">
                 <figure>
                   <img
                     src="c2-assets/im3.png"
@@ -396,15 +427,15 @@
             <h1 class="text-accent text-4xl font-semibold mb-12">Arrival & Offers</h1>
             <div class="flex flex-col lg:flex-row lg:justify-between gap-6">
              <!-- left -->
-             <div class=" bg-[#115414] rounded-xl lg:w-7/12 mx-auto">
+             <div class=" bg-[#115414] rounded-xl w-full lg:w-7/12 mx-auto">
               <div class="hero-content flex-row-reverse lg:flex-row-reverse justify-between items-center">
                 <img
                   src="c2-assets/dawat-mock-up.png"
-                  class="max-w-sm"/>
+                  class="w-56 lg:w-3/6"/>
                 <div class="space-y-4 ">
                   <img src="c2-assets/dawat-logo.png" alt="">
-                  <button class="btn bg-[#63B76D] border-none text-[#FFFFFF] text-2xl font-normal">Cook Exotic Dishes</button>
-                  <h1 class="text-[#FFFFFF] text-4xl font-normal">UP to <span class="text-[#FFFFFF] text-4xl font-bold">20% OFF</span></h1>
+                  <button class="btn bg-[#63B76D] border-none text-[#FFFFFF] text-xs lg:text-3xl font-normal">Cook Exotic Dishes</button>
+                  <h1 class="text-[#FFFFFF] text-2xl lg:text-3xl font-normal">UP to <span class="text-[#FFFFFF] lg:text-4xl text-2xl font-bold">20% OFF</span></h1>
                 </div>
               </div>
             </div>
@@ -415,11 +446,11 @@
                 <div class="hero-content flex-row-reverse lg:flex-row-reverse">
                   <img
                     src="c2-assets/india-gate-mock-up.png"
-                    class="max-w-sm " />
+                    class="w-36 lg:w-2/6" />
                   <div class="space-y-4">
                     <img src="c2-assets/india-gate-logo.png" alt="">
-                    <button class="btn bg-[#2A4D97] border-none text-[#FFFFFF] text-2xl font-normal">Cook Exotic Dishes</button>
-                    <h1 class="text-[#FFFFFF] text-4xl font-normal">UP to <span class="text-[#FFFFFF] text-4xl font-bold">20% OFF</span></h1>
+                    <button class="btn bg-[#2A4D97] border-none text-[#FFFFFF] text-xl font-normal">Cook Exotic Dishes</button>
+                    <h1 class="text-[#FFFFFF] text-2xl lg:text-3xl font-normal">UP to <span class="text-[#FFFFFF] text-2xl lg:text-4xl font-bold">40% OFF</span></h1>
                   </div>
                 </div>
               </div>
